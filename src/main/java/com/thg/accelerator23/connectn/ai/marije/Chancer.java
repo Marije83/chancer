@@ -16,7 +16,7 @@ public class Chancer extends Player {
 
   @Override
   public int makeMove(Board board) {
-    Random random = new Random(8);
+    Random random = new Random(11);
     int locationX = random.nextInt();
 
     while(!board.hasCounterAtPosition(new Position(locationX, 7))) {
